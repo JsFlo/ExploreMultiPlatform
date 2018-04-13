@@ -1,0 +1,12 @@
+*.dex
+*.class
+bin/
+gen/
+build/
+.gradle/
+local.properties
+.DS_Store
+.gradle.xml
+*.iml
+*.iws
+.idea/
