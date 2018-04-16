@@ -3,17 +3,22 @@ buildscript {
 
     repositories {
         mavenCentral()
+        google()
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.android.tools.build:gradle:3.1.0'
     }
 }
 
 
 apply plugin: 'kotlin-platform-common'
 
-repositories {
-    mavenCentral()
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
 }
 
 dependencies {
