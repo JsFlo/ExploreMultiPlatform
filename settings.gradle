@@ -1,3 +1,4 @@
+include ':myapplication'
 rootProject.name = 'MyMultiPlatform'
 
 include 'MyMultiPlatform-jvm', 'MyMultiPlatform-js'
