@@ -1,13 +1,14 @@
 buildscript {
-    ext.kotlin_version = '1.2.31'
+    ext.kotlin_version = '1.3.72'
 
     repositories {
         mavenCentral()
+        jcenter()
         google()
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath 'com.android.tools.build:gradle:3.1.0'
+        classpath 'com.android.tools.build:gradle:4.0.1'
     }
 }
 
@@ -17,6 +18,7 @@ apply plugin: 'kotlin-platform-common'
 allprojects {
     repositories {
         google()
+        mavenCentral()
         jcenter()
     }
 }
