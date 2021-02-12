@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pdf to Html</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	window.onload = function(){
+
+		/*** Collect data from another place ***/
+		var data = {
+			from_day : "02",
+			from_month : "Октабрь",
+			from_year: "2020"
+		}
+
+
+		/*** Select form elements to set data ***/
+		var fromDay = document.querySelector('[name=from-day]'); // Selector of from-day input
+		var fromMonth = document.querySelector('[name=from-month]'); // Selector of from-month input
+		var fromYear = document.querySelector('[name=from-year]'); // Selector of from-year input
+
+		/*** Setting collected data to current form ***/
+		fromDay.value = data.from_day;
+		fromMonth.value = data.from_month;
+		fromYear.value = data.from_year;
+	}
+
+</script>
+</body>
+
+</html>
